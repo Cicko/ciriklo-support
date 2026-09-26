@@ -1,12 +1,13 @@
 :root {
   color-scheme: light;
-  --ink: #3c3c3c;
-  --muted: #5f6b73;
-  --green: #58cc02;
-  --green-dark: #4aa802;
-  --blue: #1cb0f6;
-  --line: #e5e5e5;
-  --wash: #f7f7f7;
+  --ink: #1f2933;
+  --muted: #5c6670;
+  --green: #2e9e47;
+  --green-dark: #237a37;
+  --blue: #1f6fd1;
+  --blue-dark: #1756a8;
+  --line: #e4e1da;
+  --wash: #f8f7f4;
 }
 
 * { box-sizing: border-box; }
@@ -19,10 +20,10 @@ body {
   line-height: 1.55;
 }
 
-a { color: #1899d6; }
+a { color: var(--blue); }
 
 header {
-  background: linear-gradient(180deg, #1cb0f6 0%, #1cb0f6 55%, #58cc02 55%, #58cc02 100%);
+  background: linear-gradient(180deg, #2f7fd8 0%, #1f6fd1 58%, #2e9e47 58%, #237a37 100%);
   color: white;
   padding: 44px 24px 40px;
 }
@@ -40,9 +41,9 @@ main { max-width: 840px; margin: 0 auto; padding: 44px 24px 64px; }
 
 .card {
   background: white;
-  border: 2px solid var(--line);
-  border-bottom-width: 5px;
+  border: 1px solid var(--line);
   border-radius: 22px;
+  box-shadow: 0 4px 16px rgba(28, 37, 48, .07);
   padding: 30px;
 }
 
@@ -55,12 +56,12 @@ h2 { margin-top: 32px; font-size: 23px; }
 h3 { margin-top: 22px; font-size: 18px; }
 p, li { color: var(--muted); }
 
-.lang { display: inline-block; font-size: 13px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--green-dark); margin-bottom: 6px; }
-hr { border: none; border-top: 2px solid var(--line); margin: 38px 0; }
+.lang { display: inline-block; font-size: 13px; font-weight: 700; color: var(--blue); background: rgba(31, 111, 209, .1); padding: 3px 10px; border-radius: 999px; margin-bottom: 8px; }
+hr { border: none; border-top: 1px solid var(--line); margin: 38px 0; }
 
 .contact {
-  background: #eaf8ff;
-  border: 2px solid #c9ecfd;
+  background: #e3eefb;
+  border: 1px solid #c4d9f4;
   border-radius: 18px;
   padding: 24px;
   margin-top: 22px;
@@ -71,12 +72,10 @@ hr { border: none; border-top: 2px solid var(--line); margin: 38px 0; }
   margin-top: 8px;
   padding: 13px 20px;
   color: white;
-  background: var(--green);
-  border-radius: 14px;
-  box-shadow: 0 4px 0 var(--green-dark);
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: .04em;
+  background: var(--blue);
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(23, 86, 168, .3);
+  font-weight: 700;
   text-decoration: none;
 }
 
