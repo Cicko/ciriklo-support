@@ -58,6 +58,7 @@ p, li { color: var(--muted); }
 
 .lang { display: inline-block; font-size: 13px; font-weight: 700; color: var(--blue); background: rgba(31, 111, 209, .1); padding: 3px 10px; border-radius: 999px; margin-bottom: 8px; }
 hr { border: none; border-top: 1px solid var(--line); margin: 38px 0; }
+.nowrap { white-space: nowrap; }
 
 .contact {
   background: #e3eefb;
